@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SoliResi.css">
+    <title>Solicitud residencia</title>
+</head>
+
+<body>
+    <!-- Cuerpo de mi header-->
+    <header>
+        <div class="header_superior">
+            <div class="logo">
+                <img src="../img/tec_chetumal.png" alt="tec_chetumal">
+            </div>
+        </div>
+        <div class="container__menu">
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label id="label__check" for="check__menu">
+                    <i class="fas fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="#">Tipo de proyecto</a>
+                            <ul>
+                                <li><a href="../SolicitudResidencia/SoliResi.html">Proyecto personal</a></li>
+                                <li><a href="../Banco de trabajo/banco.html">Proyecto banco proyectos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Documentacion</a>
+                            <ul>
+                                <li><a href="../SolicitudResidencia/SoliResi.html">Doc. Solicitud residencia</a></li>
+                                <li><a href="../Registro Asesorias/registroAsesorias.html">Registro asesorias</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Asesor</a>
+                            <ul>
+                                <li><a href="../Asesores asignados/asesores.html">Asesor asignado</a></li>
+                                <li><a href="../Horario Disponible/horarioDisponible.html">Horario disponible</a></li>
+                                <li><a href="../Calendario Asesorias/calendario.html">Calendario asesorias</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Login/login.html" id="cerrar"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Cuerpo de mi main-->
+    <main>
+        <div class="principal">
+            <h1>Instituto tecnologico de chetumal</h1>
+            <h2>Division de estudios profecional de solicitud de residencias profesionales</h2>
+            <div class="inputs">
+                <input type="text" value="Jefe Academico" id="jefeAcademico" disabled>
+                <input type="text" value="Coordinador De Carrera" id="coordinador" disabled>
+                <input type="text" value="ISIC" id="carrera" disabled>
+                <input type="text" id="fecha" placeholder="fecha" onclick="fecha();">
+            </div>
+        </div>
+        <table id="Proyecto">
+            <tbody>
+                <tr>
+                    <th>Nombre del proyecto:</th>
+                    <td colspan="4"><input id="nombreProyecto" type="text"></td>
+                </tr>
+                <tr>
+                    <th>Tipo de proyecto</th>
+                    <td>Interno: <input type="checkbox" name="" id="2" class="pcheckbox"></td>
+                    <td>Externo: <input type="checkbox" name="" id="3" class="pcheckbox"></td>
+                    <td>Dual: <input type="checkbox" name=""  id="4" class="pcheckbox"></td>
+                    <td>CIIE: <input type="checkbox" name="" id="5" class="pcheckbox"></td>
+                </tr>
+                <tr>
+                    <th>Opcion elegida</th>
+                    <td>Propuesta propia: <input type="checkbox"  id="6" class="scheckbox"></td>
+                    <td>Trabajador: <input type="checkbox" id="7" class="scheckbox"></td>
+                    <td colspan="2">Banco de proyectos: <input type="checkbox" id="8" class="scheckbox"></td>
+                </tr>
+                <tr>
+                    <th>Periodo proyectado</th>
+                    <td>Nombre del asesor interno: <input type="text" id="input1"></td>
+                    <td colspan="3">Numero de residentes: <input type="text" id="input2" ></td>
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+        <table id="Empresa">
+            <caption>Datos de la empresa: </caption>
+            <tbody>
+                <tr>
+                    <th>Nombre: </th>
+                    <td colspan="5"><input type="text" id="input3"></td>
+                </tr>
+                <tr>
+                    <th>Ramo: </th>
+                    <td>Industria: <input type="checkbox" name="industria" id="9" class="tcheckbox"></input></td>
+                    <td id="servicios">Servicios: <input type="checkbox" name="Servicios" id="10" class="tcheckbox"></td>
+                    <td>Otro: <input type="checkbox" name="" id="18" class="tcheckbox"></td>
+                    <th>R.F.C</th>
+                    <td><input type="text" id="input4"></td>
+                </tr>
+                <tr>
+                    <th>Sector:</th>
+                    <td colspan="2">Publico: <input type="checkbox" name="publico" id="11" class="cCheckbox"></td>
+                    <td colspan="3">Privado: <input type="checkbox" name="Privado" id="12" class="cCheckbox"></td>
+                </tr>
+                <tr>
+                    <th>Actividad principal de la empresa</th>
+                    <td colspan="5"><input type="text" id="input5"></td>
+                </tr>
+                <tr>
+                    <th>Domicilio</th>
+                    <td colspan="5"><input type="text" id="input6"></td>
+                </tr>
+                <tr>
+                    <th>Colonia: </th>
+                    <td><input type="text" id="input7"></td>
+                    <th>C.P:</th>
+                    <td><input type="text" id="input8"></td>
+                    <th>FAX</th>
+                    <td><input type="text" id="input9"></td>
+                </tr>
+                <tr>
+                    <th>Ciudad:</th>
+                    <td><input type="text" id="input10"></td>
+                    <th >Telefono:</th>
+                    <td colspan="3"><input type="text" id="input11"></td>
+                </tr>
+                <tr>
+                    <th>Nombre del titular de la empresa:</th>
+                    <td><input type="text" id="input12"></td>
+                    <th>Puesto:</th>
+                    <td colspan="3"><input type="text" id="input13"></td>
+                </tr>
+                <tr>
+                    <th>Nombre del asesor externo:</th>
+                    <td><input type="text" id="input14"></td>
+                    <th>Puesto:</th>
+                    <td colspan="3"><input type="text" id="input15"></td>
+                </tr>
+                <tr>
+                    <th>Nombre de la persona que firmara el acuerdo de
+                        Trabajador estudiante-escuela:
+                    </th>
+                    <td><input type="text" id="input16"></td>
+                    <th>Puesto:</th>
+                    <td colspan="3"><input type="text" id="input17"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="Residente">
+            <caption>Datos del residente</caption>
+            <tbody>
+                <tr>
+                    <th>Nombre:</th>
+                    <td colspan="5"><input type="text" id="input18"></td>
+                </tr>
+                <tr>
+                    <th>Carrera:</th>
+                    <td><input type="text" id="input19"></td>
+                    <th>No. de control:</th>
+                    <td><input type="text" id="input20"></td>
+                    <th>Semestre a cursar:</th>
+                    <td><input type="text" id="input21"></td>
+                </tr>
+                <tr>
+                    <th>Domicilio:</th>
+                    <td colspan="5"><input type="text" id="input22"></td>
+                </tr>
+                <tr>
+                    <th>E-mail:</th>
+                    <td><input type="text" id="input23"></td>
+                    <th>Seguro social:</th>
+                    <td>ISSTE<input type="checkbox" id="13" class="qCheckbox"></td>
+                    <td colspan="2">IMSS<input type="checkbox" id="14" class="qCheckbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="bEnviaryEditar">
+            <input type="button" value="Enviar"  id="Enviar" onclick="enviar();">
+            <input type="button" value="Editar" id="Editar" onclick="editar();">
+        </div>
+    </main>
+    <!-- Cuerpo de mi footer-->
+    <footer>
+        <h2>Andres Adrian Martin Canto </h2>
+        <div class="social-icon-container">
+            <a href="https://www.facebook.com/ITChetumal/" id="social-icon"><img src="../img/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://twitter.com/IT_Chetumal" id="social-icon"><img src="../img/Twitter.png" alt="Twitter"></a>
+            <a href="mailto:desarrollo@chetumal.tecnm.mx" id="social-icon"><img src="../img/Hotmail.png"
+                    alt="Hotmail"></a>
+        </div>
+        <span>
+            Instituto Tecnologico de chetumal &copy;<br>
+            Contacto al: <a href="mailto:L19390732@chetumal.tecnm.mx">L19390732@chetumal.tecnm.mx</a>
+        </span>
+    </footer>
+    <script src="SoliResi.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

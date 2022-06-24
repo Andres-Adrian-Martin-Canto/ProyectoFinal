@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Body */
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+/* Header elementos */
+header img {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  width: 550px;
+}
+.header_abajo {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 70px;
+  background-color: #132035;
+  padding: 0px 20px;
+}
+.header_abajo h1 {
+  padding: 15px;
+}
+
+/* Cuerpo de mi pagina */
+main{
+    display: flex;
+    padding: 60px;
+    justify-content: center;
+}
+
+/* Numero de control */
+.numero-control{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    background-color: #e26326;
+    border: solid #000 1px;
+}
+.numero-control img{
+    margin: 10px;
+    height: 50px;
+}
+.numero-control input{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 200px;
+    height: 30px;
+}
+.numero-control input[type=text]{
+    font-size: 12px;
+    border: 2px solid #000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+.numero-control input[type=text]:focus{
+    background-color: #132035;
+    color: #fff;
+
+}
+
+/* Password */
+.password{
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    background-color: #e26326;
+    border: solid #000 1px;
+}
+.password img{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+.password input{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 200px;
+    height: 30px;
+}
+.password input[type=password]{
+    font-size: 12px;
+    border: 2px solid #000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+.password input[type=password]:focus{
+    background-color: #132035;
+    color: #fff;
+}
+/* Button modificaciones */
+.button{
+    margin-top: 10px;
+    margin-left: 36%;
+}
+.button #Enviar{
+    border: solid #000 2px;
+    width: 80px;
+    background-color: #e26326;
+    color: #fff;
+}
+.button #Enviar:hover{
+    background-color: #132035;
+}
+
+/* Footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+  background-color: #132035;
+  margin-top: auto;
+}
+footer h2 {
+  padding-top: 10px;
+}
+.social-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.social-icon-container a img {
+  height: 60px;
+  padding: 10px;
+}
+.social-icon-container a img:hover {
+  border: #e26326 solid 2px;
+  border-radius: 90px;
+}
+.social-icon-container a:hover {
+  color: #e26326;
+}
+span {
+  text-align: center;
+  padding: 10px;
+}
+span a {
+  color: #fff;
+}
+span a:hover {
+  color: #e26326;
+}
+/* Para movil */
+@media screen and (max-width: 600px) {
+  .header_abajo h1 {
+    padding: 5px;
+    font-size: 25px;
+  }
+  header img {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 350px;
+  }
+  footer h2 {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .social-icon-container a img {
+    height: 45px;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_superior"></div>
+            <img src="../img/tec_chetumal.png" alt="tec_chetumal">
+        <div class="header_abajo">
+            <h1>Instituto tecnologico de chetumal</h1>
+        </div>
+    </header>
+    <main>
+        <form action="../Menu/menuOfi.html" id="form">
+            <div class="numero-control">
+                <img src="../img/User.png" alt="User">
+                <input type="text" name="numeroDeControl" id="numeroDeControl" placeholder="Proporciona tu numero de control">
+            </div>
+            <div class="password">
+                <img src="../img/password.png" alt="password">
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Password">
+            </div>
+            <div class="button">
+                <input type="submit" id="Enviar" onclick="enviar(event);">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h2>Andres Adrian Martin Canto </h2>
+        <div class="social-icon-container">
+            <a href="https://www.facebook.com/ITChetumal/" id="social-icon"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/IT_Chetumal" id="social-icon"><img src="../img/Twitter.png" alt="Twitter"></a>
+            <a href="mailto:desarrollo@chetumal.tecnm.mx" id="social-icon"><img src="../img/Hotmail.png" alt="Hotmail"></a>
+        </div>
+        <span>
+            Instituto Tecnologico de chetumal &copy;<br>
+            Contacto al: <a href="mailto:L19390732@chetumal.tecnm.mx">L19390732@chetumal.tecnm.mx</a>
+        </span>
+    </footer>
+    <script src="login.js"></script>
+</body>
+
+</html>
